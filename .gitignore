@@ -1,0 +1,84 @@
+# Binaries – compiled executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/bin/
+/dist/
+/*.test
+
+# Dependency directories (if using vendor)
+/vendor/
+
+# Go workspace file (go.work, go.work.sum)
+go.work
+go.work.sum
+
+# Test binary and coverage files
+*.test
+*.out
+coverage.html
+coverage.out
+*.coverprofile
+
+# Output of the `go build` command – adjust binary name if needed
+/socialmedia-post-automation
+!/cmd/**/main.go
+
+# Environment and configuration – sensitive or local
+.env
+.env.local
+.env.*.local
+*.env
+config.local.*
+config/*.local.*
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+.project
+.classpath
+.settings/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+/logs/
+
+# Database files (if you use SQLite locally)
+*.db
+*.sqlite
+*.sqlite3
+
+# Redis dump (local)
+dump.rdb
+
+# TLS / certificates – keep these out
+*.crt
+*.key
+*.pem
+
+# Temporary files
+/tmp
+tmp/
+*.tmp
+
+# User-specific files (e.g., from `go run` panics)
+crash.log
+
+# Your local custom overrides
+/.envrc
+.direnv/
+
+# Go module cache (if you accidentally commit it – unlikely)
+/pkg/mod/
