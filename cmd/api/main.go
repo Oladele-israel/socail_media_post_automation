@@ -42,6 +42,7 @@ func main() {
 
 	// Main router — only global middleware here
 	r := chi.NewRouter()
+	r.Use(middleware.CORS)
 	r.Use(chimiddleware.Logger)
 	r.Use(chimiddleware.Recoverer)
 
